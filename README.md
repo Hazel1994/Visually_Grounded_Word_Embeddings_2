@@ -1,7 +1,7 @@
-# Visually_Grounded_Word_Embeddings_2
+# Language with Vision: a Study on Grounded Word and Sentence Embeddings
 
-This repository contains the source code for 'x' paper submitted to [**Behavior Research Methods**](https://www.springer.com/journal/13428).
-We introduced new sets of visually grounded word embeddings based on textual embeddings and image-caption pairs.
+This repository contains the source code for 'Language with Vision: a Study on Grounded Word and Sentence Embeddings' paper submitted to [**Behavior Research Methods**](https://www.springer.com/journal/13428).
+We have introduced new sets of visually grounded word embeddings based on textual embeddings and image-caption pairs.
 Our grounded embeddings show great zero-shot generalization performance across various NLP tasks. We further investigate how to properly bridge language (word embeddings) with vision and analyse the effect of visual grounding on textual embeddings in various ways. Finally, we evaluate our model on a behavioural experiment and show that our embeddings model human behaviour much better compared to purely textual embeddings. The figure below outlines our model and show a random sample of words along with their nearest neighbors for both the grounded and the textual embeddings.
 
 ![](teaser/teaser.png)
@@ -18,7 +18,7 @@ grounded embeddings are reported*
 Please check out our paper for numerical evaluation and further analysis. 
 
 ## Usage Example
-We provide two off-the-shelf versions of our grounded embeddings. One with 300d word-vectors and the other one with 1024d. The small version acheives almost the same performance as the big one (less than 1% drop) on our NLP evaluations. They are both available [here]() as gensim models. The code snippet below shows how you can load and use the model.
+We provide two off-the-shelf versions of our grounded embeddings. One with 300d word-vectors and the other one with 1024d. The small version acheives almost the same performance as the big one (less than 1% drop) on our NLP evaluations. They are both available [here](https://unitc-my.sharepoint.com/:f:/g/personal/iighs01_cloud_uni-tuebingen_de/EubADs5lw11Kgm6T4Sgu4sUB3VG2iuf2FjLmDGQwwQABnQ?e=AY2324) as gensim models. The code snippet below shows how you can load and use the model.
 
 ```python
 import gensim
@@ -57,11 +57,11 @@ The model is written in tensofrlow 2.8.0. You can easy install the required pack
 pip install -r requirements.txt
 ```
 ## Training & Extracting Grounded Embeddings
-Run the *main.py* to prepare the datasets and train the model. It will also store the pre-processed dataset (e.g. cnn features) and tokenizer in the *RESOURCES* directory for later usage.
+Run the *main.py* to prepare the datasets and train the model. It will also save the pre-processed dataset (e.g. cnn features) and tokenizer in the *RESOURCES* directory for later usage.
 ```
 python main.py
 ```
-after this step, you can run *extract_embeddings.py* to load the learned alignment and generate zero-shot grounded embeddings. This file will convert the embeddings into a gensim model under the *SAVING_DIR* directory.
+After this step, you can run *extract_embeddings.py* to load the learned alignment and generate zero-shot grounded embeddings. This file will convert the embeddings into a gensim model under the *SAVING_DIR* directory.
 
 ```
 pyhton extract_embeddings.py
