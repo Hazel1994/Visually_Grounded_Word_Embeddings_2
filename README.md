@@ -51,7 +51,7 @@ If you need the embeddings in a different dimension or plan to modify the model,
 you can adjust the hyperparamters and rest of the configuation in the config.py.
 
 ## requirments
-The model is written in tensofrlow 2.8.0. You can easy install the required packages using pip into your virtual environment.
+The model is written in Python 3.8 with tensofrlow 2.8.0. You can easy install the required packages using pip into your virtual environment.
 
 ```
 pip install -r requirements.txt
