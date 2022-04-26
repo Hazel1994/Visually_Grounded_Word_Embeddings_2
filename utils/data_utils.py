@@ -27,8 +27,8 @@ class Data_Generator(Sequence):
         # Count the number of tokens in all these token-sequences.
         num_tokens = [len(t) for t in batch_y]
 
-        # Max number of tokens.
-        max_tokens = np.max(num_tokens)
+        # Max number of tokens. using less lenghty input happens to produce slightly better results so why not
+        max_tokens = np.max(num_tokens) - 1
 
         # Pad all the other token-sequences with zeros
         # so they all have the same length
