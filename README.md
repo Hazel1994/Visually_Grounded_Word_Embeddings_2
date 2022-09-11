@@ -18,7 +18,7 @@ grounded embeddings are reported*
 Please check out our paper for numerical evaluation and further analysis. 
 
 ## Usage Example
-We provide two off-the-shelf versions of our grounded embeddings. One with 300d word-vectors and the other one with 1024d. The small version acheives almost the same performance as the big one (less than 1% drop) on our NLP evaluations. They are both available [here](https://unitc-my.sharepoint.com/:f:/g/personal/iighs01_cloud_uni-tuebingen_de/EubADs5lw11Kgm6T4Sgu4sUB3VG2iuf2FjLmDGQwwQABnQ?e=AY2324) as gensim models. The code snippet below shows how you can load and use the model.
+We provide two off-the-shelf versions of our grounded embeddings. One with 300d word-vectors and the other one with 1024d. The small version acheives almost the same performance as the big one (less than 1% drop) on our NLP evaluations. They are both available [here](https://unitc-my.sharepoint.com/:f:/g/personal/iighs01_cloud_uni-tuebingen_de/EubADs5lw11Kgm6T4Sgu4sUB3VG2iuf2FjLmDGQwwQABnQ?e=SCuWBH) as gensim models. The code snippet below shows how you can load and use the model.
 
 ```python
 import gensim
