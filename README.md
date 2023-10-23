@@ -43,14 +43,14 @@ print(embeddings_1024d.most_similar('sadness',topn=5))
 ## Getting your own grounded embeddings from scratch
 
 If you need the embeddings in a different dimension or plan to modify the model, you can train the model and generate new set of word embeddings as follows.
-## configuration
+## Configuration
 - Download the train, validation, and the annnotation of [COCO2017 dataset](https://cocodataset.org/#download) and set the BASE_DATASET_DIR in the config.py file to where the dataset is saved. This directory should include the following: 1. *train_images* 2. *val_images*, containing the training and validation images respectively. 3. *annotations*, including *captions_train2017.json* and *captions_val2017.json*. 
 - Download the [GloVe word embeddings](https://nlp.stanford.edu/projects/glove/) (we used *840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB*) or any other textual embedding with the same format and set *EMBEDDINGS_DIR* to the directory containing the embedding as a .txt file.
 - Set the dimension of grounded embedings by setting *ALIGNMENT_DIM* to your desired dimension.
 
 you can adjust the hyperparamters and rest of the configuation in the config.py.
 
-## requirments
+## Requirments
 The model is written in Python 3.8 with tensofrlow 2.8.0. You can easy install the required packages using pip into your virtual environment. You might need to upgrade your pip to 20.0.4 if you encounter any error.
 
 ```
