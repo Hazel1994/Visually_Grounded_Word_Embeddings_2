@@ -70,6 +70,15 @@ pyhton extract_embeddings.py
 
 
 ## License
+MIT
+
+## Citation
 if you find our code/embeddings useful please cite our paper:
+@article{shahmohammadi2022language,
+  title={Language with vision: a study on grounded word and sentence embeddings},
+  author={Shahmohammadi, Hassan and Heitmeier, Maria and Shafaei-Bajestan, Elnaz and Lensch, Hendrik and Baayen, Harald},
+  journal={arXiv preprint arXiv:2206.08823},
+  year={2022}
+}
 
 
