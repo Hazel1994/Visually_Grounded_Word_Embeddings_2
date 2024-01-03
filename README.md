@@ -1,6 +1,6 @@
 # Language with Vision: a Study on Grounded Word and Sentence Embeddings
 
-This repository contains the source code for '[Language with Vision: a Study on Grounded Word and Sentence Embeddings](https://link.springer.com/article/10.3758/s13428-023-02294-z)' published in [**Behavior Research Methods**](https://www.springer.com/journal/13428).
+This repository contains the source code for [Language with Vision: a Study on Grounded Word and Sentence Embeddings](https://link.springer.com/article/10.3758/s13428-023-02294-z) published in [**Behavior Research Methods**](https://www.springer.com/journal/13428).
 We have introduced new sets of visually grounded word embeddings based on textual embeddings and image-caption pairs.
 Our grounded embeddings show great zero-shot generalization performance across various NLP tasks. We further investigate how to properly bridge language (word embeddings) with vision and analyse the effect of visual grounding on textual embeddings in various ways. Finally, we evaluate our model on a behavioural experiment and show that our embeddings model human behaviour much better compared to purely textual embeddings. The figure below outlines our model and show a random sample of words along with their nearest neighbors for both the grounded and the textual embeddings.
 
